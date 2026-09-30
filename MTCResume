@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tyler Hancock | MTC Actor Resume</title>
+
+<style>
+
+    /* =========================================================
+       GENERAL
+    ========================================================= */
+
+    @page {
+        size: Letter;
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+        --navy: #17324a;
+        --blue: #315b78;
+        --gold: #b28a45;
+        --gold-light: #eee6d7;
+        --cream: #f7f6f2;
+        --gray: #5f6b73;
+        --light-gray: #dce2e6;
+        --text: #29343c;
+        --white: #ffffff;
+    }
+
+    body {
+        background: #e7ebee;
+        color: var(--text);
+        font-family:
+            "Helvetica Neue",
+            Helvetica,
+            Arial,
+            sans-serif;
+        line-height: 1.45;
+        font-size: 10.3pt;
+    }
+
+    .resume {
+        width: 8.5in;
+        min-height: 11in;
+        margin: 30px auto;
+        background: var(--white);
+        box-shadow: 0 10px 35px rgba(0,0,0,.12);
+    }
+
+
+    /* =========================================================
+       HEADER
+    ========================================================= */
+
+    .header {
+        background:
+            linear-gradient(
+                135deg,
+                #17324a 0%,
+                #214762 65%,
+                #2d5872 100%
+            );
+        color: white;
+        padding: 31px 42px 27px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .header::after {
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border: 1px solid rgba(255,255,255,.10);
+        border-radius: 50%;
+        right: -90px;
+        top: -130px;
+    }
+
+    .header::before {
+        content: "";
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border: 1px solid rgba(202,164,92,.20);
+        border-radius: 50%;
+        right: 55px;
+        bottom: -125px;
+    }
+
+    .name {
+        position: relative;
+        z-index: 2;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+    .professional-title {
+        position: relative;
+        z-index: 2;
+        margin-top: 4px;
+        color: #dbe7ed;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .contact {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 20px;
+        margin-top: 17px;
+        font-size: 9.1pt;
+        color: #edf3f6;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .contact-icon {
+        color: #d3b06b;
+        font-weight: 700;
+    }
+
+    .contact a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+
+    /* =========================================================
+       BODY LAYOUT
+    ========================================================= */
+
+    .content {
+        display: grid;
+        grid-template-columns: 2.2fr 1fr;
+    }
+
+    .main {
+        padding: 27px 29px 35px 42px;
+    }
+
+    .sidebar {
+        background: #f5f7f8;
+        border-left: 1px solid var(--light-gray);
+        padding: 27px 26px 35px;
+    }
+
+
+    /* =========================================================
+       SECTION HEADINGS
+    ========================================================= */
+
+    .section {
+        margin-bottom: 23px;
+    }
+
+    .section-title {
+        color: var(--navy);
+        text-transform: uppercase;
+        font-size: 11.2px;
+        font-weight: 750;
+        letter-spacing: 1.55px;
+        padding-bottom: 7px;
+        margin-bottom: 12px;
+        border-bottom: 2px solid var(--gold);
+    }
+
+
+    /* =========================================================
+       SUMMARY
+    ========================================================= */
+
+    .summary {
+        color: #3d4951;
+        line-height: 1.63;
+        font-size: 10.15pt;
+    }
+
+
+    /* =========================================================
+       EXPERIENCE
+    ========================================================= */
+
+    .job {
+        margin-bottom: 20px;
+        break-inside: avoid;
+    }
+
+    .job:last-child {
+        margin-bottom: 0;
+    }
+
+    .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .job-title {
+        color: var(--navy);
+        font-size: 11.3pt;
+        font-weight: 700;
+    }
+
+    .company {
+        color: var(--blue);
+        font-size: 9.8pt;
+        font-weight: 600;
+        margin-top: 1px;
+    }
+
+    .location {
+        color: var(--gray);
+        font-size: 8.7pt;
+        margin-top: 1px;
+    }
+
+    .date {
+        color: var(--gray);
+        font-size: 8.7pt;
+        white-space: nowrap;
+        text-align: right;
+        padding-top: 2px;
+    }
+
+    .job ul {
+        margin-top: 7px;
+        padding-left: 18px;
+    }
+
+    .job li {
+        color: #414d54;
+        margin-bottom: 4px;
+        padding-left: 2px;
+        line-height: 1.45;
+    }
+
+    .job li::marker {
+        color: var(--gold);
+    }
+
+
+    /* =========================================================
+       EDUCATION
+    ========================================================= */
+
+    .education {
+        margin-bottom: 5px;
+        break-inside: avoid;
+    }
+
+    .school {
+        color: var(--navy);
+        font-size: 11pt;
+        font-weight: 700;
+    }
+
+    .degree {
+        color: #46535b;
+        font-size: 9.8pt;
+        margin-top: 2px;
+    }
+
+    .education-location {
+        color: var(--gray);
+        font-size: 8.7pt;
+        margin-top: 2px;
+    }
+
+
+    /* =========================================================
+       SIDEBAR
+    ========================================================= */
+
+    .sidebar .section-title {
+        font-size: 10.7px;
+    }
+
+    .skill-group {
+        margin-bottom: 18px;
+    }
+
+    .skill-list {
+        list-style: none;
+    }
+
+    .skill-list li {
+        color: #47545c;
+        font-size: 9.1pt;
+        padding: 5px 0;
+        border-bottom: 1px solid #e0e5e8;
+    }
+
+    .skill-list li:last-child {
+        border-bottom: none;
+    }
+
+
+    /* =========================================================
+       LANGUAGE
+    ========================================================= */
+
+    .language {
+        margin-bottom: 12px;
+    }
+
+    .language-name {
+        color: var(--navy);
+        font-weight: 700;
+        font-size: 9.8pt;
+    }
+
+    .language-level {
+        color: var(--gray);
+        font-size: 8.8pt;
+        margin-top: 1px;
+    }
+
+
+    /* =========================================================
+       MTC STRENGTHS
+    ========================================================= */
+
+    .strength {
+        background: var(--gold-light);
+        border-left: 3px solid var(--gold);
+        padding: 10px 11px;
+        margin-bottom: 9px;
+    }
+
+    .strength-title {
+        color: var(--navy);
+        font-size: 9.2pt;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+
+    .strength-text {
+        color: #51504b;
+        font-size: 8.8pt;
+        line-height: 1.45;
+    }
+
+
+    /* =========================================================
+       QUALIFICATIONS
+    ========================================================= */
+
+    .qualification {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .dot {
+        width: 6px;
+        height: 6px;
+        min-width: 6px;
+        border-radius: 50%;
+        background: var(--gold);
+        margin-top: 6px;
+    }
+
+    .qualification-text {
+        color: #47535b;
+        font-size: 9.2pt;
+        line-height: 1.45;
+    }
+
+    .qualification-text strong {
+        color: var(--navy);
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    .footer {
+        border-top: 1px solid var(--light-gray);
+        padding: 10px 42px;
+        text-align: center;
+        color: #77828a;
+        font-size: 8pt;
+    }
+
+
+    /* =========================================================
+       PRINT
+    ========================================================= */
+
+    @media print {
+
+        body {
+            background: white;
+        }
+
+        .resume {
+            width: 8.5in;
+            min-height: 11in;
+            margin: 0;
+            box-shadow: none;
+        }
+
+        .header {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .sidebar {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .strength {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .job,
+        .section,
+        .education {
+            break-inside: avoid;
+        }
+    }
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 850px) {
+
+        .resume {
+            width: 100%;
+            margin: 0;
+        }
+
+        .content {
+            grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+            border-left: none;
+            border-top: 1px solid var(--light-gray);
+        }
+    }
+
+</style>
+</head>
+
+
+<body>
+
+<div class="resume">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="name">
+            TYLER HANCOCK
+        </div>
+
+        <div class="professional-title">
+            MTC Actor Candidate • Haitian Creole • Acting • Missionary Service
+        </div>
+
+        <div class="contact">
+
+            <div class="contact-item">
+                <span class="contact-icon">●</span>
+                <span>Provo, Utah</span>
+            </div>
+
+            <!-- Replace with actual email -->
+            <div class="contact-item">
+                <span class="contact-icon">✉</span>
+                <span>Tyhancock676@gmail.com</span>
+            </div>
+
+            <!-- Replace with actual phone -->
+            <div class="contact-item">
+                <span class="contact-icon">☎</span>
+                <span>801-821-6377</span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">in</span>
+                <a href="https://www.linkedin.com/in/tyler-hancock7"
+                   target="_blank">
+                    linkedin.com/in/tyler-hancock7
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTENT
+    ====================================================== -->
+
+    <div class="content">
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="main">
+
+
+            <!-- SUMMARY -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    Professional Summary
+                </div>
+
+                <p class="summary">
+
+                    Brigham Young University student with experience in
+                    missionary service, Haitian Creole communication,
+                    theatrical performance, and administrative support.
+                    Served as a full-time missionary in Indianapolis,
+                    Indiana, developing strong cross-cultural communication
+                    skills and a high level of proficiency in Haitian
+                    Creole. Experienced in plays and musicals, with a
+                    strong understanding of character development,
+                    preparation, live performance, and authentic
+                    interpersonal interaction. Currently working as an
+                    Administrative Services Coordinator at PACS, where
+                    organization, professionalism, front-desk service,
+                    phone communication, and attention to detail are
+                    essential.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- CORE QUALIFICATIONS -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    Core Qualifications
+                </div>
+
+
+                <div class="qualification">
+
+                    <div class="dot"></div>
+
+                    <div class="qualification-text">
+                        <strong>Haitian Creole:</strong>
+                        Highly proficient through extensive real-world
+                        missionary experience and daily communication.
+                    </div>
+
+                </div>
+
+
+                <div class="qualification">
+
+                    <div class="dot"></div>
+
+                    <div class="qualification-text">
+                        <strong>Acting & Character Work:</strong>
+                        Experience performing in plays and musicals,
+                        including preparation, memorization, and
+                        maintaining a believable character.
+                    </div>
+
+                </div>
+
+
+                <div class="qualification">
+
+                    <div class="dot"></div>
+
+                    <div class="qualification-text">
+                        <strong>One-on-One Communication:</strong>
+                        Experienced listening carefully, asking thoughtful
+                        questions, building rapport, and adapting
+                        conversations to different individuals.
+                    </div>
+
+                </div>
+
+
+                <div class="qualification">
+
+                    <div class="dot"></div>
+
+                    <div class="qualification-text">
+                        <strong>Adaptability:</strong>
+                        Comfortable entering new interactions with
+                        different people and responding naturally rather
+                        than relying on a repetitive approach.
+                    </div>
+
+                </div>
+
+
+                <div class="qualification">
+
+                    <div class="dot"></div>
+
+                    <div class="qualification-text">
+                        <strong>Organization:</strong>
+                        Experienced managing administrative responsibilities,
+                        schedules, front-desk responsibilities, phone calls,
+                        and day-to-day office operations.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- EXPERIENCE -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    Experience
+                </div>
+
+
+                <!-- PACS -->
+
+                <div class="job">
+
+                    <div class="job-header">
+
+                        <div>
+
+                            <div class="job-title">
+                                Administrative Services Coordinator
+                            </div>
+
+                            <div class="company">
+                                PACS
+                            </div>
+
+                            <div class="location">
+                                Salt Lake City, Utah • On-site
+                            </div>
+
+                        </div>
+
+                        <div class="date">
+                            Jan 2026 - Present
+                        </div>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Provide administrative and organizational support
+                            in a professional office environment.
+                        </li>
+
+                        <li>
+                            Serve as a front-desk point of contact,
+                            communicating professionally with visitors and
+                            helping direct questions and requests.
+                        </li>
+
+                        <li>
+                            Answer and manage phone calls while maintaining
+                            clear, courteous, and professional communication.
+                        </li>
+
+                        <li>
+                            Organize and complete administrative tasks while
+                            balancing multiple responsibilities and
+                            maintaining attention to detail.
+                        </li>
+
+                        <li>
+                            Demonstrate reliability, professionalism, and
+                            follow-through in a role requiring consistent
+                            day-to-day organization.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- MISSION -->
+
+                <div class="job">
+
+                    <div class="job-header">
+
+                        <div>
+
+                            <div class="job-title">
+                                Full-Time Missionary
+                            </div>
+
+                            <div class="company">
+                                The Church of Jesus Christ of Latter-day Saints
+                            </div>
+
+                            <div class="location">
+                                Indianapolis, Indiana • Haitian Creole
+                            </div>
+
+                        </div>
+
+                        <div class="date">
+                            Jul 2024 - Jan 2026
+                        </div>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Served as a full-time missionary in Indianapolis,
+                            Indiana, working closely with individuals and
+                            families from a variety of backgrounds.
+                        </li>
+
+                        <li>
+                            Developed a high level of proficiency in Haitian
+                            Creole through sustained, real-world communication.
+                        </li>
+
+                        <li>
+                            Built relationships through active listening,
+                            thoughtful questions, empathy, and individualized
+                            communication.
+                        </li>
+
+                        <li>
+                            Adapted conversations according to each person's
+                            questions, interests, concerns, and level of
+                            understanding.
+                        </li>
+
+                        <li>
+                            Worked closely with companions and mission leaders,
+                            following schedules, expectations, and assigned
+                            responsibilities.
+                        </li>
+
+                        <li>
+                            Developed discipline, reliability, cultural
+                            awareness, and the ability to remain engaged and
+                            personable throughout a demanding daily schedule.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- ACTING -->
+
+                <div class="job">
+
+                    <div class="job-header">
+
+                        <div>
+
+                            <div class="job-title">
+                                Actor / Performer
+                            </div>
+
+                            <div class="company">
+                                Plays & Musicals
+                            </div>
+
+                        </div>
+
+                        <div class="date">
+                            Middle School, High school, College • 2020 - Present
+                        </div>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Performed in plays and musicals, developing
+                            confidence and presence in live performance
+                            environments.
+                        </li>
+
+                        <li>
+                            Prepared characters through memorization,
+                            rehearsal, character development, and
+                            collaboration with other performers.
+                        </li>
+
+                        <li>
+                            Developed the ability to maintain character while
+                            responding naturally to live performance
+                            circumstances.
+                        </li>
+
+                        <li>
+                            Worked collaboratively with directors and fellow
+                            performers to meet production and performance
+                            expectations.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- EDUCATION -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    Education
+                </div>
+
+
+                <div class="education">
+
+                    <div class="school">
+                        Brigham Young University
+                    </div>
+
+                    <div class="degree">
+                        Pre-Major • Current Student
+                    </div>
+
+                    <div class="education-location">
+                        Provo, Utah • 2026 – Present
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- MTC RELEVANCE -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    Relevant to MTC Actor Role
+                </div>
+
+                <p class="summary">
+
+                    The combination of missionary experience, theatrical
+                    performance, language proficiency, and professional
+                    administrative work provides a strong foundation for
+                    interacting authentically with missionary
+                    companionships. Experienced communicating about the
+                    Church with individuals from outside the Church,
+                    adapting conversations to different people, maintaining
+                    professionalism, and performing consistently in front of
+                    others. Haitian Creole proficiency may also support
+                    language-related responsibilities when needed.
+
+                </p>
+
+            </section>
+
+
+        </main>
+
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- LANGUAGES -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    Languages
+                </div>
+
+
+                <div class="language">
+
+                    <div class="language-name">
+                        Haitian Creole
+                    </div>
+
+                    <div class="language-level">
+                        Highly Proficient/Fluent
+                    </div>
+
+                </div>
+
+
+                <div class="language">
+
+                    <div class="language-name">
+                        English
+                    </div>
+
+                    <div class="language-level">
+                        Native
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ACTING -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    Acting & Performance
+                </div>
+
+                <ul class="skill-list">
+
+                    <li>Character Development</li>
+                    <li>Live Performance</li>
+                    <li>Memorization</li>
+                    <li>Maintaining Character</li>
+                    <li>Improvisational Response</li>
+                    <li>Active Listening</li>
+                    <li>Audience Engagement</li>
+                    <li>Rehearsal & Collaboration</li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- COMMUNICATION -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    Communication
+                </div>
+
+                <ul class="skill-list">
+
+                    <li>One-on-One Communication</li>
+                    <li>Cross-Cultural Communication</li>
+                    <li>Relationship Building</li>
+                    <li>Active Listening</li>
+                    <li>Questioning & Conversation</li>
+                    <li>Professional Phone Etiquette</li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- ADMIN -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    Professional Skills
+                </div>
+
+                <ul class="skill-list">
+
+                    <li>Organization</li>
+                    <li>Administrative Support</li>
+                    <li>Front Desk Operations</li>
+                    <li>Phone Communication</li>
+                    <li>Scheduling</li>
+                    <li>Attention to Detail</li>
+                    <li>Professionalism</li>
+                    <li>Reliability</li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- STRENGTHS -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    MTC Strengths
+                </div>
+
+
+                <div class="strength">
+
+                    <div class="strength-title">
+                        Authentic Interaction
+                    </div>
+
+                    <div class="strength-text">
+                        Comfortable listening and responding naturally
+                        rather than treating every conversation identically.
+                    </div>
+
+                </div>
+
+
+                <div class="strength">
+
+                    <div class="strength-title">
+                        Cultural Awareness
+                    </div>
+
+                    <div class="strength-text">
+                        Missionary experience and Haitian Creole proficiency
+                        developed through sustained cross-cultural
+                        communication.
+                    </div>
+
+                </div>
+
+
+                <div class="strength">
+
+                    <div class="strength-title">
+                        Character & Performance
+                    </div>
+
+                    <div class="strength-text">
+                        Acting experience provides a foundation for
+                        believable character work and consistent performance.
+                    </div>
+
+                </div>
+
+
+                <div class="strength">
+
+                    <div class="strength-title">
+                        Professional Reliability
+                    </div>
+
+                    <div class="strength-text">
+                        Current administrative role requires organization,
+                        professionalism, communication, and dependable
+                        follow-through.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </aside>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        Tyler Hancock • Provo, Utah • MTC Actor Candidate
+    </footer>
+
+
+</div>
+
+</body>
+</html>
